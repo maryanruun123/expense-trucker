@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 60px;
+  background: #15ceb5;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+} */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; */
+  padding-top: 20px; /* Add padding to create space at the top */
+}
+
+.btn {
+  /* Set margin to auto to horizontally center the button */
+  /* margin-top: 40px; */
+  margin-top: 20px; /* Remove the margin-bottom to reduce the space below the button */
+  padding: 10px 60px;
+  background: #15ceb5;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+  margin-left: 30%;
+}
+
+.popup {
+  width: 400px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  visibility: hidden;
+  transition: transform 0.45s, top 0.4s;
+}
+
+.popup.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+  margin-bottom: 20px;
+}
+
+.popup input[type="text"],
+.popup input[type="number"],
+.popup input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #4cae4c;
+}
+
+.expense-table {
+  margin: 10% auto; /* Set margin to auto to horizontally center the table */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 10px 10px;
+}
+
+thead th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: left;
+}
+
+tbody td {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+}
+
+.total-amount {
+  padding: 10px;
+  text-align: right;
+  background-color: #f2f2f2;
+}
